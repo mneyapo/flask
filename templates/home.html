@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Home Page</title>
+</head>
+<body>
+    <h2>
+        QRCODE CHECKER
+    </h2>
+    <!--form name="form" action="{{ url_for('handle_data') }}" method="GET">-->
+    <!--form name="form" action="http://fifm2019-rest.e-maroc.org/FIFM_2019/CHECK_RESTO/LCD-L6/" method="GET">-->
+    <form name="form" action="http://localhost:5000/result" method="POST">
+        <input type="text" id="projectFilepath" size="40" name="projectFilepath" placeholder="Enter a text" autofocus/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
